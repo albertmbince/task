@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      p{
+        padding-left: 1rem;
+      }
+    </style>
+
+</head>
+<body>
+   <form method="post">
+     {% csrf_token %}
+     <input type="image"><label for="image"></label>
+     <fieldset style="color:black;border-color: orangered;"><p>name:
+    <input type="text"><label ></label></p>
+    <p>displayname:
+      <input type="text"><label ></label> status:enrolled</p>
+      <p>nickname:
+        <input type="text"><label ></label></p>
+        <p>Birthdate:
+          <input type="date"><label ></label></p>
+          
+            <p>Gender:
+            <input type="text"><label ></label> subjects: <input type="text" style="height: 4.6cm;"</p>
+            <p>Grade:
+            <input type="text"><label ></label></p>
+            <p>City:
+            <input type="text"><label ></label><text style="color: orangered;"> Review basic student information and enrollment</text></p>
+            
+  </fieldset>
+  <fieldset style="border-color: orangered;">
+  Home address:<input type="text" style="height: 2cm;"> phone:<input type="number">
+  <p>city:<input type="text">  mob:<input type="number"></p> 
+  <p>state: <input type="text"> zipcode: <input type="number"><text style="color: orangered;">review contact information</text></p>
+  <p>country:<input type="text"> email: <input type="email"></p>
+  </fieldset>
+</body>
+</html>
